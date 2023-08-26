@@ -1,5 +1,5 @@
 class Geometric {
-    public color: string;
+    color:string;
     constructor(color: string) {
       this.color = color;
     }
@@ -19,8 +19,7 @@ class Geometric {
 class Shakllar extends Geometric{
     
 }
-
-  const shakl = new Shakllar("yellow");
+  const shakl = new Shakllar("red");
   const btn = document.querySelector(".Submit") as HTMLButtonElement;
   
   
@@ -28,7 +27,7 @@ class Shakllar extends Geometric{
     e.preventDefault();
     const input = document.getElementById('input') as HTMLInputElement;
     const boxes = document.querySelector('.boxes') as HTMLDivElement;
-    
+
     boxes.innerHTML = "";
     for (let i = 0; i < +input.value; i++) {
       shakl.add();
